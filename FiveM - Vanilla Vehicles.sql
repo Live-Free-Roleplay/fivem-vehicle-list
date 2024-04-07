@@ -471,14 +471,14 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 	('Vapid Ratel',  'ratel', 20000 , 'offroad'),
 	('Speedo 5',  'speedo5', 20000 , 'vans'),
 	('Grotti Itali GTO Stinger TT',  'stingertt', 20000 , 'super');
-	
-CREATE TABLE IF NOT EXISTS `vehicles_category` (
-  `name` varchar(60) NOT NULL,
-  `label` varchar(60) NOT NULL,
-  PRIMARY KEY (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `vehicles_category` (`name`, `label`) VALUES
+CREATE TABLE `vehicle_categories` (
+  	`name` varchar(60) NOT NULL,
+  	`label` varchar(60) NOT NULL,
+	PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `vehicle_categories` (`name`, `label`) VALUES
 	('compacts', 'Compacts'),
 	('coupes', 'Coupes'),
 	('cycles', 'Bicycles'),
