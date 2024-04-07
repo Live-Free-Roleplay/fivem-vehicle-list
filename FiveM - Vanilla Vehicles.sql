@@ -431,7 +431,7 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 	('Obey IWagen', 'iwagen', 20000, 'SUVs'),
 	('Enus Jubilee', 'jubilee', 20000, 'SUVs'),
 	('Maibatsu Mule', 'mule5', 20000, 'Commercial'),
-	('Mammoth Patriot MilSpec', 20000, 'patriot3', 'OffRoad'),
+	('Mammoth Patriot MilSpec', 'patriot3', 20000, 'OffRoad'),
 	('Western Reever', 'reever', 20000, 'Motorcycles'),
 	('Nagasaki Shinobi', 'shinobi', 20000, 'Motorcycles'),
 	('Vapid Youga Custom', 'youga4', 20000, 'Vans'),
