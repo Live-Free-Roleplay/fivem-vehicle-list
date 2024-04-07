@@ -1,3 +1,6 @@
+DROP TABLE `vehicles`;
+DROP TABLE `vehicle_categories`;
+
 CREATE TABLE IF NOT EXISTS `vehicles` (
   `name` varchar(60) NOT NULL,
   `model` varchar(60) NOT NULL,
@@ -490,5 +493,9 @@ INSERT INTO `vehicle_categories` (`name`, `label`) VALUES
 	('sportsclassics', 'Sports Classics'),
 	('super', 'Supercars'),
 	('suvs', 'SUVs'),
-	('vans', 'Vans');
+	('vans', 'Vans'),
+	('silver', 'Silver'),
+	('gold', 'Gold'),
+	('diamond', 'Diamond'),
+	('luxury', 'Luxury');
 
