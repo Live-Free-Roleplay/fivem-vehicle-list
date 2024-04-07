@@ -6,7 +6,6 @@ CREATE TABLE IF NOT EXISTS `vehicles` (
   PRIMARY KEY (`model`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-
 INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 	('Adder', 'adder', 900000, 'super'),
 	('Akuma', 'AKUMA', 7500, 'motorcycles'),
@@ -458,11 +457,20 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 	('Boor',  'boor', 20000 , 'muscle'),
 	('Eudora',  'eudora', 20000 , 'muscle'),
 	('Hotring Everon',  'everon2', 20000 , 'muscle'),
-	('Virtue',  'virtue', 20000 , 'sports');
-
-	
-
-
+	('Virtue',  'virtue', 20000 , 'sports'),
+	-- San Andreas Mercenaries
+	('Albany Brigham',  'brigham', 20000 , 'sportsclassics'),
+	('Bravado Buffalo EVX',  'buffalo5', 20000 , 'muscle'),
+	('Vapid Clique Wagon',  'clique2', 20000 , 'sportsclassics'),
+	('Penaud La Coureuse',  'coureur', 20000 , 'sports'),
+	('Bravado Hotring Hellfire',  'gauntlet6', 20000 , 'muscle'),
+	('Junk Energy Inductor',  'inductor', 20000 , 'cycles'),
+	('Inductor',  'inductor2', 20000 , 'cycles'),
+	('Declasse Walton L35',  'l35', 20000 , 'offroad'),
+	('Maibatsu MonstroCiti',  'monstrociti', 20000 , 'suvs'),
+	('Vapid Ratel',  'ratel', 20000 , 'offroad'),
+	('Speedo 5',  'speedo5', 20000 , 'vans'),
+	('Grotti Itali GTO Stinger TT',  'stingertt', 20000 , 'super');
 	
 CREATE TABLE IF NOT EXISTS `vehicles_category` (
   `name` varchar(60) NOT NULL,
@@ -470,18 +478,17 @@ CREATE TABLE IF NOT EXISTS `vehicles_category` (
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-
 INSERT INTO `vehicles_category` (`name`, `label`) VALUES
 	('compacts', 'Compacts'),
 	('coupes', 'Coupes'),
-	('cycles', 'Cycles'),
-	('motorcycles', 'Motos'),
+	('cycles', 'Bicycles'),
+	('motorcycles', 'Motorcycles'),
 	('muscle', 'Muscle'),
 	('offroad', 'Off Road'),
 	('sedans', 'Sedans'),
 	('sports', 'Sports'),
 	('sportsclassics', 'Sports Classics'),
-	('super', 'Super'),
+	('super', 'Supercars'),
 	('suvs', 'SUVs'),
 	('vans', 'Vans');
 
